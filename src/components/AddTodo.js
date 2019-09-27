@@ -39,7 +39,7 @@ class AddTodo extends Component {
           value={content}
           onChange={this.changeHandler}
         />
-        <label htmlFor="todo">Add new Todo:</label>
+        <label htmlFor="todo">Add task...</label>
       </form>
     );
   }

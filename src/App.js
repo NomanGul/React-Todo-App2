@@ -37,9 +37,9 @@ class App extends Component {
   addTodo(todo) {
     if (todo.content === "") {
       swal({
-        title: "Plz write something",
+        title: "Please add a task",
         buttons: false,
-        icon: "warning",
+        icon: "wanrning",
         timer: 1250
       });
       return null;
@@ -51,8 +51,6 @@ class App extends Component {
       todos
     });
     localStorage.setItem("todos", JSON.stringify(todos));
-    // const getItems = localStorage.getItem("todos");
-    // console.log(getItems);
   }
 
   deleteTodo(id) {
@@ -72,7 +70,7 @@ class App extends Component {
     // console.log(todos)
     return (
       <div className="container">
-        <h1 className="center blue-text">Todo's</h1>
+        <h1 className="center blue-text">Todos</h1>
         <Todo todos={todos} deleteTodo={this.deleteTodo} />
         <AddTodo addTodo={this.addTodo} />
       </div>

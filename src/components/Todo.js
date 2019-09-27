@@ -20,7 +20,7 @@ const Todo = ({ todos, deleteTodo }) => {
       })
     ) : (
       <div className="collection-item center">
-        You've no Todo's left :) Yay!
+        You've no Todo's left!
       </div>
     );
   return <div className="collection">{getTodos}</div>;
